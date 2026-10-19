@@ -203,7 +203,7 @@ GROQ_API_KEY=your-groq-api-key
 6. Set **Plan** to `Free`.
 7. Under **Environment Variables**, add:
    - `NODE_ENV`: `production`
-   - `GEMINI_API_KEY`: *(Your free Google AI Studio key)*
+   - `GEMINI_API_KEY`: *(......)*
    - `SUPABASE_URL`: *(Your Supabase project URL)*
    - `SUPABASE_KEY`: *(Your Supabase key)*
 8. Click **Create Web Service**. Render provides your public URL with the `/health` endpoint live.
