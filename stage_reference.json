@@ -1,0 +1,348 @@
+[
+  {
+    "stage_number": 1,
+    "name": "Opening",
+    "short_purpose": "Reach the right person and say who you are.",
+    "what_it_is_for": "Reach the right person and say who you are. The prospect decides in the first ten seconds whether this call is worth a minute.",
+    "what_tends_to_happen": [
+      "A switchboard or an assistant answers and asks what it is about",
+      "The person answers but is somewhere else: driving, in a meeting, at lunch",
+      "The number belongs to somebody who left the company or moved divisions"
+    ],
+    "prospect_says": [
+      "\"Yes, tell me. Who is this?\"",
+      "\"Can you please come again? From where are you calling?\"",
+      "\"I am driving / in a meeting right now. Call back after 2.\"",
+      "\"He doesn't work here anymore / left the company last year.\""
+    ],
+    "quick_taps": [
+      {
+        "id": "reached_prospect",
+        "label": "Reached prospect directly",
+        "outcome_hint": null
+      },
+      {
+        "id": "assistant_gatekeeper",
+        "label": "Switchboard / Gatekeeper",
+        "outcome_hint": "follow_up"
+      },
+      {
+        "id": "busy_driving_meeting",
+        "label": "Busy / Driving / In meeting",
+        "outcome_hint": "follow_up"
+      },
+      {
+        "id": "wrong_person_moved",
+        "label": "Wrong person / Left company",
+        "outcome_hint": "wrong_person"
+      }
+    ],
+    "default_words_prompt": "e.g., 'Yes speaking, tell me quickly' or 'Driver here, sir is in meeting'"
+  },
+  {
+    "stage_number": 2,
+    "name": "Purpose",
+    "short_purpose": "Say in one or two sentences why you called.",
+    "what_it_is_for": "Say in one or two sentences why you called, in words the prospect can repeat to a colleague. A purpose they cannot repeat is a purpose they did not hear.",
+    "what_tends_to_happen": [
+      "They ask what the company does, often twice, because the first answer was a label",
+      "They ask where you got their number",
+      "They guess it is a sales call and say so"
+    ],
+    "prospect_says": [
+      "\"Uh, from where? Meridian who? What do you do basically?\"",
+      "\"Regarding what, actually? What does a growth report mean?\"",
+      "\"Who gave you this number? Is this a sales call?\"",
+      "\"Okay, tell me, boliye. What is the context?\""
+    ],
+    "quick_taps": [
+      {
+        "id": "asked_what_we_do",
+        "label": "Asked what company does",
+        "outcome_hint": null
+      },
+      {
+        "id": "asked_growth_report",
+        "label": "Asked what report means",
+        "outcome_hint": null
+      },
+      {
+        "id": "asked_number_source",
+        "label": "Asked who gave number",
+        "outcome_hint": null
+      },
+      {
+        "id": "called_it_sales",
+        "label": "Called it a sales call",
+        "outcome_hint": null
+      },
+      {
+        "id": "let_continue",
+        "label": "Understood & let me continue",
+        "outcome_hint": null
+      }
+    ],
+    "default_words_prompt": "e.g., 'What is this regarding basically?'"
+  },
+  {
+    "stage_number": 3,
+    "name": "Permission",
+    "short_purpose": "Find out whether they are willing to talk now.",
+    "what_it_is_for": "Find out whether they are willing to talk now. A clear yes, a clear no, or a time to call back are all good outcomes. Talking on without one is not.",
+    "what_tends_to_happen": [
+      "Call me after two, call me tomorrow, send it on WhatsApp first",
+      "A short yes, and then they go quiet and wait",
+      "They keep talking without answering, which is not a yes"
+    ],
+    "prospect_says": [
+      "\"Yeah, go ahead. / Yes, please proceed.\"",
+      "\"Send it on WhatsApp first. Let me have a look and come back.\"",
+      "\"Can you call me in an hour or evening? Currently tied up.\"",
+      "\"Not right now, we are busy / still a startup so don't need this.\""
+    ],
+    "quick_taps": [
+      {
+        "id": "clear_yes_go_ahead",
+        "label": "Clear yes ('Go ahead')",
+        "outcome_hint": null
+      },
+      {
+        "id": "send_whatsapp_email",
+        "label": "Send on WhatsApp / email first",
+        "outcome_hint": "agreed_to_receive_report"
+      },
+      {
+        "id": "call_back_named_time",
+        "label": "Call back at named time",
+        "outcome_hint": "follow_up"
+      },
+      {
+        "id": "short_reluctant",
+        "label": "Brief / 'Tell me quickly'",
+        "outcome_hint": null
+      },
+      {
+        "id": "firm_no",
+        "label": "Clear no / Not now",
+        "outcome_hint": "not_interested"
+      }
+    ],
+    "default_words_prompt": "e.g., 'Send on WhatsApp to this number, let me see'"
+  },
+  {
+    "stage_number": 4,
+    "name": "Their business",
+    "short_purpose": "Ask about their company before pitching yours.",
+    "what_it_is_for": "Ask about their company and their work before saying anything about yours. People talk about what they do; they rarely listen to what you do.",
+    "what_tends_to_happen": [
+      "They answer in one line and wait for the pitch",
+      "They correct you: they do not make that, they are not that size, that is a different division",
+      "They ask you to tell them about yourself first"
+    ],
+    "prospect_says": [
+      "\"We only deal in domestic market, no exports anymore.\"",
+      "\"We have a local distributor in Hyderabad (Orion) who handles business.\"",
+      "\"I only look after engineering/sustainability, finance is different.\"",
+      "\"Tell me about Meridian first, what clients have you worked with?\""
+    ],
+    "quick_taps": [
+      {
+        "id": "shared_business_scope",
+        "label": "Shared business scope / line",
+        "outcome_hint": null
+      },
+      {
+        "id": "corrected_size_product",
+        "label": "Corrected division / product",
+        "outcome_hint": null
+      },
+      {
+        "id": "mentioned_distributor",
+        "label": "Has distributor / agency",
+        "outcome_hint": null
+      },
+      {
+        "id": "challenged_caller",
+        "label": "Asked caller credentials first",
+        "outcome_hint": null
+      }
+    ],
+    "default_words_prompt": "e.g., 'We are in domestic B2B supply, we don't do export'"
+  },
+  {
+    "stage_number": 5,
+    "name": "Their need, in their words",
+    "short_purpose": "Hear what they are trying to do or struggling with.",
+    "what_it_is_for": "Hear what they are trying to do or struggling with, in their own words. This is the one stage where the caller writes down exactly what was said.",
+    "what_tends_to_happen": [
+      "They name a goal: a new market, a new product line, plant capacity",
+      "They say everything is fine and there is nothing they need",
+      "They turn it around and ask what you can do for a company like theirs"
+    ],
+    "prospect_says": [
+      "\"Next week we'll have a clearer idea of products and where to push.\"",
+      "\"We have a robust internal process and team, we don't require outside help.\"",
+      "\"In this line we don't believe in experiments, we are fine with old clients.\"",
+      "\"What exactly would your growth report identify for a business like ours?\""
+    ],
+    "quick_taps": [
+      {
+        "id": "named_growth_goal",
+        "label": "Named growth goal / new product",
+        "outcome_hint": "interested"
+      },
+      {
+        "id": "operational_bottleneck",
+        "label": "Shared bottleneck (capacity/margin)",
+        "outcome_hint": "interested"
+      },
+      {
+        "id": "satisfied_no_need",
+        "label": "Satisfied / 'Everything is fine'",
+        "outcome_hint": "not_interested"
+      },
+      {
+        "id": "asked_value_add",
+        "label": "Asked what Meridian solves",
+        "outcome_hint": null
+      }
+    ],
+    "default_words_prompt": "Write verbatim: 'Our margins are getting squeezed by raw material suppliers...'"
+  },
+  {
+    "stage_number": 6,
+    "name": "Objection",
+    "short_purpose": "Hear the reason for a no and understand it.",
+    "what_it_is_for": "Hear the reason for a no and understand it. A reason you understand can be answered on this call or the next; a reason you talked over cannot.",
+    "what_tends_to_happen": [
+      "We already have an agency, a consultant, an in-house team",
+      "Not the right person; speak to marketing, speak to the owner",
+      "Send something in writing and we will see"
+    ],
+    "prospect_says": [
+      "\"Meri internal team hai, we don't hire outside consultants.\"",
+      "\"I am not the right person. Better be in touch with our CFO / MD.\"",
+      "\"I am not interested in any reports or growth consulting at this time.\"",
+      "\"We are not allowed to share financial or innovation data, company policy.\"",
+      "\"Just drop an email with your profile. I will discuss with team.\""
+    ],
+    "quick_taps": [
+      {
+        "id": "has_internal_team",
+        "label": "Has agency / in-house team",
+        "outcome_hint": "not_interested"
+      },
+      {
+        "id": "wrong_dept_referral",
+        "label": "Not right person (gives referral)",
+        "outcome_hint": "wrong_person"
+      },
+      {
+        "id": "not_interested_now",
+        "label": "Firm not interested",
+        "outcome_hint": "not_interested"
+      },
+      {
+        "id": "policy_data_secrecy",
+        "label": "Policy / won't share data",
+        "outcome_hint": "do_not_call"
+      },
+      {
+        "id": "send_info_brush_off",
+        "label": "Brush off: 'Send email and we'll see'",
+        "outcome_hint": "follow_up"
+      }
+    ],
+    "default_words_prompt": "e.g., 'We already have our own strategy team, no need for third party'"
+  },
+  {
+    "stage_number": 7,
+    "name": "Next step",
+    "short_purpose": "Agree one concrete thing: document, time, or referral.",
+    "what_it_is_for": "Agree one concrete thing: a document on WhatsApp or email, a call at a named time, a meeting. One thing, named, with a time or a channel.",
+    "what_tends_to_happen": [
+      "A yes to receiving a document, which may be politeness rather than interest",
+      "A time named by them, which is worth more than a time proposed by you",
+      "A referral to a colleague, with or without a number"
+    ],
+    "prospect_says": [
+      "\"Send it on WhatsApp on the same number, I will check it.\"",
+      "\"Call us next Tuesday after 2 PM for a working session / Google Meet.\"",
+      "\"Connect with Mr. Naik / Mr. Suresh [shares direct mobile number].\"",
+      "\"Bump up the email you sent last week, I will reply.\""
+    ],
+    "quick_taps": [
+      {
+        "id": "whatsapp_report_agreed",
+        "label": "Send report on WhatsApp",
+        "outcome_hint": "agreed_to_receive_report"
+      },
+      {
+        "id": "scheduled_call_time",
+        "label": "Fixed callback date & time",
+        "outcome_hint": "next_step_agreed"
+      },
+      {
+        "id": "founder_meeting_meet",
+        "label": "Agreed to Google Meet with founder",
+        "outcome_hint": "next_step_agreed"
+      },
+      {
+        "id": "referred_colleague_num",
+        "label": "Referred colleague with phone #",
+        "outcome_hint": "follow_up"
+      },
+      {
+        "id": "email_sent_to_review",
+        "label": "Email profile / bump thread",
+        "outcome_hint": "agreed_to_receive_report"
+      }
+    ],
+    "default_words_prompt": "e.g., 'Send report on WhatsApp, call me Tuesday 2:30 PM'"
+  },
+  {
+    "stage_number": 8,
+    "name": "Close",
+    "short_purpose": "End the call clearly and record the true outcome.",
+    "what_it_is_for": "End the call clearly and record what happened: the outcome, the next step, and the prospect's words from stage 5. The record is what the next call is built on.",
+    "what_tends_to_happen": [
+      "The call ends mid-sentence, because the line dropped or they hung up",
+      "A warm goodbye after a no, which is still a no",
+      "The caller logs an outcome that does not match what was said on the call"
+    ],
+    "prospect_says": [
+      "\"Okay, thank you Priya ji. Send it over.\"",
+      "\"Alright, thank you. [Disconnects]\"",
+      "\"Thank you for calling, but as I said, we are fine. Bye.\"",
+      "[Line drops mid-sentence / call abruptly disconnected]"
+    ],
+    "quick_taps": [
+      {
+        "id": "clear_next_step_locked",
+        "label": "Clear next step agreed & verified",
+        "outcome_hint": "next_step_agreed"
+      },
+      {
+        "id": "report_dispatch_pending",
+        "label": "Report consent given",
+        "outcome_hint": "agreed_to_receive_report"
+      },
+      {
+        "id": "polite_no_closed",
+        "label": "Polite dismissal (True No)",
+        "outcome_hint": "not_interested"
+      },
+      {
+        "id": "line_dropped_hangup",
+        "label": "Line dropped / hung up",
+        "outcome_hint": "call_again"
+      },
+      {
+        "id": "do_not_contact",
+        "label": "Asked not to call again",
+        "outcome_hint": "do_not_call"
+      }
+    ],
+    "default_words_prompt": "Final notes or exact closing phrase"
+  }
+]

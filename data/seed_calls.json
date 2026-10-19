@@ -1,0 +1,336 @@
+[
+  {
+    "id": "c1001-t001",
+    "call_code": "T001",
+    "caller_name": "Priya (Meridian)",
+    "prospect_name": "Dev ji",
+    "prospect_role": "Technical Services Director",
+    "company_name": "Kalpana Chem Supplies",
+    "company_kind": "mid-size private company",
+    "phone_number": "+91 98490 12345",
+    "status": "completed",
+    "current_stage": 8,
+    "max_stage_reached": 7,
+    "outcome": "next_step_agreed",
+    "notes": "Follow-up call on report. Agreed to Google Meet next Tuesday after 2 PM with Vikram.",
+    "prospect_words_stage5": "Perhaps next week would be better. We would have a clearer idea of our products and where to push them.",
+    "ai_summary": "Prospect receptive to strategic review. Agreed to Tuesday working session with founder.",
+    "ai_sentiment": "Receptive",
+    "duration_seconds": 75,
+    "started_at": "2026-10-19T10:23:32.792Z",
+    "ended_at": "2026-10-19T10:25:32.793Z",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_name": "Opening",
+        "action_tapped": "reached_prospect",
+        "action_label": "Reached prospect directly",
+        "prospect_words": "Aha Priya ji, yes speaking."
+      },
+      {
+        "stage_number": 2,
+        "stage_name": "Purpose",
+        "action_tapped": "let_continue",
+        "action_label": "Understood & let me continue",
+        "prospect_words": "Go ahead."
+      },
+      {
+        "stage_number": 3,
+        "stage_name": "Permission",
+        "action_tapped": "clear_yes_go_ahead",
+        "action_label": "Clear yes ('Go ahead')",
+        "prospect_words": "Ah, yes. Go ahead."
+      },
+      {
+        "stage_number": 5,
+        "stage_name": "Their need, in their words",
+        "action_tapped": "named_growth_goal",
+        "action_label": "Named growth goal / new product",
+        "prospect_words": "Perhaps next week would be better. We would have a clearer idea of our products and where to push them."
+      },
+      {
+        "stage_number": 7,
+        "stage_name": "Next step",
+        "action_tapped": "scheduled_call_time",
+        "action_label": "Fixed callback date & time",
+        "prospect_words": "Tuesday after 2 PM. Call us in the afternoon and we can have a working session on Google Meet."
+      },
+      {
+        "stage_number": 8,
+        "stage_name": "Close",
+        "action_tapped": "clear_next_step_locked",
+        "action_label": "Clear next step agreed & verified",
+        "prospect_words": "Right. Got it. Thank you."
+      }
+    ]
+  },
+  {
+    "id": "c1002-t026",
+    "call_code": "T026",
+    "caller_name": "Neha (Meridian)",
+    "prospect_name": "Gaurav ji",
+    "prospect_role": "VP & Head, People & Organisation",
+    "company_name": "Sigma Technologies India",
+    "company_kind": "India arm of a multinational",
+    "phone_number": "+91 98201 44321",
+    "status": "completed",
+    "current_stage": 8,
+    "max_stage_reached": 7,
+    "outcome": "next_step_agreed",
+    "notes": "Was driving. Agreed to receive report on WhatsApp and follow-up next week.",
+    "prospect_words_stage5": "We are heavy on innovation and looking to accelerate talent productivity.",
+    "ai_summary": "High interest while mobile. WhatsApp dispatch verified for next week review.",
+    "ai_sentiment": "Open",
+    "duration_seconds": 94,
+    "started_at": "2026-10-19T09:43:32.793Z",
+    "ended_at": "2026-10-19T09:45:32.793Z",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_name": "Opening",
+        "action_tapped": "busy_driving_meeting",
+        "action_label": "Busy / Driving / In meeting",
+        "prospect_words": "Yeah, yeah. Please tell me. I am driving, but I can speak to you."
+      },
+      {
+        "stage_number": 2,
+        "stage_name": "Purpose",
+        "action_tapped": "let_continue",
+        "action_label": "Understood & let me continue",
+        "prospect_words": "Tell me more."
+      },
+      {
+        "stage_number": 3,
+        "stage_name": "Permission",
+        "action_tapped": "send_whatsapp_email",
+        "action_label": "Send on WhatsApp / email first",
+        "prospect_words": "You send it on WhatsApp to me on the same number. Let me have a look."
+      },
+      {
+        "stage_number": 7,
+        "stage_name": "Next step",
+        "action_tapped": "whatsapp_report_agreed",
+        "action_label": "Send report on WhatsApp",
+        "prospect_words": "WhatsApp on the same number. Next week no problem."
+      },
+      {
+        "stage_number": 8,
+        "stage_name": "Close",
+        "action_tapped": "clear_next_step_locked",
+        "action_label": "Clear next step agreed & verified",
+        "prospect_words": "Thank you."
+      }
+    ]
+  },
+  {
+    "id": "c1003-t012",
+    "call_code": "T012",
+    "caller_name": "Arjun (Meridian)",
+    "prospect_name": "Dr. K. Sharma",
+    "prospect_role": "Founder",
+    "company_name": "Alloy Research Labs",
+    "company_kind": "startup",
+    "phone_number": "+91 97110 99882",
+    "status": "completed",
+    "current_stage": 6,
+    "max_stage_reached": 6,
+    "outcome": "not_interested",
+    "notes": "Questioned report scope. Declined interest in external analysis.",
+    "prospect_words_stage5": "What does a growth report mean, actually? I am sorry. I am not interested in this at the moment.",
+    "ai_summary": "Skeptical of report terminology. Polite but firm refusal.",
+    "ai_sentiment": "Skeptical",
+    "duration_seconds": 68,
+    "started_at": "2026-10-19T08:58:32.793Z",
+    "ended_at": "2026-10-19T09:00:32.793Z",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_name": "Opening",
+        "action_tapped": "reached_prospect",
+        "action_label": "Reached prospect directly",
+        "prospect_words": "Yes, please. Tell me."
+      },
+      {
+        "stage_number": 2,
+        "stage_name": "Purpose",
+        "action_tapped": "asked_growth_report",
+        "action_label": "Asked what report means",
+        "prospect_words": "What does a growth report mean, actually?"
+      },
+      {
+        "stage_number": 6,
+        "stage_name": "Objection",
+        "action_tapped": "not_interested_now",
+        "action_label": "Firm not interested",
+        "prospect_words": "I am not interested in the report, yeah. Thank you."
+      },
+      {
+        "stage_number": 8,
+        "stage_name": "Close",
+        "action_tapped": "polite_no_closed",
+        "action_label": "Polite dismissal (True No)",
+        "prospect_words": "Okay. Thank you."
+      }
+    ]
+  },
+  {
+    "id": "c1004-t021",
+    "call_code": "T021",
+    "caller_name": "Sana (Meridian)",
+    "prospect_name": "Vikas Singhal",
+    "prospect_role": "CEO & Founder",
+    "company_name": "Pure Harvest Organics",
+    "company_kind": "mid-size private company",
+    "phone_number": "+91 98190 55432",
+    "status": "completed",
+    "current_stage": 6,
+    "max_stage_reached": 6,
+    "outcome": "do_not_call",
+    "notes": "Has existing in-house team. Stated explicitly not to call for consulting.",
+    "prospect_words_stage5": "Nahin, nahin, nahin. Meri internal team hai, to hum log nahi karte abhi.",
+    "ai_summary": "Strong in-house gatekeeping. Placed on Do Not Call list.",
+    "ai_sentiment": "Dismissive",
+    "duration_seconds": 42,
+    "started_at": "2026-10-19T07:58:32.793Z",
+    "ended_at": "2026-10-19T07:59:32.793Z",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_name": "Opening",
+        "action_tapped": "reached_prospect",
+        "action_label": "Reached prospect directly",
+        "prospect_words": "Hello, bolo."
+      },
+      {
+        "stage_number": 2,
+        "stage_name": "Purpose",
+        "action_tapped": "called_it_sales",
+        "action_label": "Called it a sales call",
+        "prospect_words": "Consulting hai kya?"
+      },
+      {
+        "stage_number": 6,
+        "stage_name": "Objection",
+        "action_tapped": "has_internal_team",
+        "action_label": "Has agency / in-house team",
+        "prospect_words": "Nahin, nahin. Meri internal team hai, so we don't need."
+      },
+      {
+        "stage_number": 8,
+        "stage_name": "Close",
+        "action_tapped": "do_not_contact",
+        "action_label": "Asked not to call again",
+        "prospect_words": "Do not call again please."
+      }
+    ]
+  },
+  {
+    "id": "c1005-t010",
+    "call_code": "T010",
+    "caller_name": "Arjun (Meridian)",
+    "prospect_name": "Vinod ji",
+    "prospect_role": "Director",
+    "company_name": "ChromaChem India",
+    "company_kind": "mid-size private manufacturer",
+    "phone_number": "+91 94401 77210",
+    "status": "completed",
+    "current_stage": 8,
+    "max_stage_reached": 7,
+    "outcome": "agreed_to_receive_report",
+    "notes": "Referred to Mr. Suresh with direct phone number.",
+    "prospect_words_stage5": "I'll let you know the concerned person. You can call Mr. Suresh directly.",
+    "ai_summary": "Direct referral obtained for operational head.",
+    "ai_sentiment": "Helpful",
+    "duration_seconds": 82,
+    "started_at": "2026-10-19T06:58:32.793Z",
+    "ended_at": "2026-10-19T07:00:32.793Z",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_name": "Opening",
+        "action_tapped": "reached_prospect",
+        "action_label": "Reached prospect directly",
+        "prospect_words": "From where are you calling?"
+      },
+      {
+        "stage_number": 2,
+        "stage_name": "Purpose",
+        "action_tapped": "let_continue",
+        "action_label": "Understood & let me continue",
+        "prospect_words": "Okay. Regarding?"
+      },
+      {
+        "stage_number": 7,
+        "stage_name": "Next step",
+        "action_tapped": "referred_colleague_num",
+        "action_label": "Referred colleague with phone #",
+        "prospect_words": "Note down Mr. Suresh's number. Call him directly."
+      },
+      {
+        "stage_number": 8,
+        "stage_name": "Close",
+        "action_tapped": "clear_next_step_locked",
+        "action_label": "Clear next step agreed & verified",
+        "prospect_words": "Yeah, yeah."
+      }
+    ]
+  },
+  {
+    "id": "c1006-t043",
+    "call_code": "T043",
+    "caller_name": "Divya (Meridian)",
+    "prospect_name": "Rajesh Parekh",
+    "prospect_role": "Sales Director",
+    "company_name": "Sunrise Dye-Chem",
+    "company_kind": "mid-size private manufacturer",
+    "phone_number": "+91 93220 88102",
+    "status": "completed",
+    "current_stage": 5,
+    "max_stage_reached": 5,
+    "outcome": "not_interested",
+    "notes": "Only domestic trade with long-standing accounts. Stated no interest in experiments.",
+    "prospect_words_stage5": "In this line we don't believe in experiments, we don't want any new customers. We are fine with our current business.",
+    "ai_summary": "Traditional business mindset. No perceived urgency or growth bottlenecks.",
+    "ai_sentiment": "Conservative",
+    "duration_seconds": 110,
+    "started_at": "2026-10-19T05:48:32.793Z",
+    "ended_at": "2026-10-19T05:50:32.793Z",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_name": "Opening",
+        "action_tapped": "reached_prospect",
+        "action_label": "Reached prospect directly",
+        "prospect_words": "Yes, Parekh here."
+      },
+      {
+        "stage_number": 2,
+        "stage_name": "Purpose",
+        "action_tapped": "let_continue",
+        "action_label": "Understood & let me continue",
+        "prospect_words": "Boliye, what is it?"
+      },
+      {
+        "stage_number": 4,
+        "stage_name": "Their business",
+        "action_tapped": "shared_business_scope",
+        "action_label": "Shared business scope / line",
+        "prospect_words": "Actually I'm not an exporter anymore. Dealing in India only with very old relations."
+      },
+      {
+        "stage_number": 5,
+        "stage_name": "Their need, in their words",
+        "action_tapped": "satisfied_no_need",
+        "action_label": "Satisfied / 'Everything is fine'",
+        "prospect_words": "In this line we don't believe in experiments, we are fine with our current business."
+      },
+      {
+        "stage_number": 8,
+        "stage_name": "Close",
+        "action_tapped": "polite_no_closed",
+        "action_label": "Polite dismissal (True No)",
+        "prospect_words": "Thank you."
+      }
+    ]
+  }
+]
